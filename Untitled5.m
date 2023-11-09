@@ -1,0 +1,13 @@
+R = [1 0 0; 0 2 0; 0 0 3];
+L = [1 -1 0; -1 2 -1; 0 -1 1];
+C = [1 0 0; 0 0.5 0; 0 0 2];
+V = [1; -1; 2];
+A = [1 0 0; 0 1 0; 0 0 1];
+B = [0 0 0; 0 0 0; 0 0 1];
+[voltages, currents, powers] = solve_circuit(R, L, C, V, A, B);
+disp('电压：');
+disp(voltages);
+disp('电流：');
+disp(currents);
+disp('功率：');
+disp(powers);
